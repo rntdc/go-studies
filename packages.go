@@ -20,6 +20,15 @@ func main() {
 	}(first, 1)
 
 	fmt.Println("Instant function: ", resultado)
+
+	a := "meu ponteiro"
+	p := &a
+
+	//*p returns the p address value
+	fmt.Println(a, p, *p)
+
+	*p = "outro valor"
+	fmt.Println(a, p, *p)
 }
 
 func add(x int, y int) int {
